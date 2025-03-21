@@ -1,0 +1,212 @@
+/* ✅ Welcome Message */
+.welcome-message {
+  text-align: center;
+  padding: 15px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.user-name {
+  font-weight: bold;
+  color: #007bff;
+}
+.sub-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* ✅ Create Note Button */
+.create-note-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+.create-btn {
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #007bff;
+  border: none;
+  width: 100%;
+  max-width: 250px;
+}
+
+/* ✅ Note Card */
+.note-card {
+  margin: 15px auto;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  max-width: 95%;
+}
+.note-card:hover {
+  transform: scale(1.02);
+}
+
+/* ✅ Note Header */
+.note-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+  flex-wrap: wrap;
+}
+.note-header:hover {
+  background-color: #f1f1f1;
+}
+
+/* ✅ Note Title */
+.note-title {
+  color: #333;
+  flex: 1;
+  min-width: 50%;
+}
+
+/* ✅ Note Actions */
+.note-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* ✅ Edit & Delete Buttons */
+.edit-btn, .delete-btn, .download-btn, .share-btn {
+  font-weight: bold;
+  border-radius: 6px;
+  border: 1px solid;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✏ Edit Button */
+.edit-btn {
+  border-color: #007bff;
+  color: #007bff;
+  background-color: transparent;
+}
+.edit-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* 🗑 Delete Button */
+.delete-btn {
+  border-color: #dc3545;
+  color: #dc3545;
+  background-color: transparent;
+}
+.delete-btn:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* ⬇ Download Button */
+.download-btn {
+  border-color: #28a745;
+  color: #28a745;
+  background-color: transparent;
+  font-weight: bold;
+}
+.download-btn:hover {
+  background-color: #28a745;
+  color: white;
+}
+.download-btn i {
+  font-size: 14px;
+}
+
+/* 🔗 Share Button */
+.share-btn {
+  border-color: #17a2b8;
+  color: #17a2b8;
+  background-color: transparent;
+  font-weight: bold;
+}
+.share-btn:hover {
+  background-color: #17a2b8;
+  color: white;
+}
+.share-btn i {
+  font-size: 14px;
+}
+
+/* ✅ Note Content */
+.note-body {
+  padding: 20px;
+  background-color: #fefefe;
+}
+
+/* ✅ Fix for Category Badge Overflow */
+.category-badge {
+  white-space: normal !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 10px;
+  color: white;
+}
+
+/* ✅ Fix for Note Content Overflow */
+.note-content {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* ✅ Mobile Responsiveness Fixes */
+@media (max-width: 600px) {
+  .category-badge {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .note-title {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .note-actions {
+    justify-content: center;
+  }
+
+  .note-actions button {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .note-content {
+    font-size: 14px;
+  }
+
+  .note-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

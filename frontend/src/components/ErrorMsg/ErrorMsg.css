@@ -1,0 +1,82 @@
+/* ✅ Modern Error Message Styling */
+.error-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out, fadeOut 0.5s ease-in-out 4.5s forwards;
+    transition: all 0.3s ease;
+    margin: 15px auto; /* ✅ Centered & adds top/bottom spacing */
+    gap: 10px;
+    min-width: 250px;
+    max-width: 400px;
+    width: fit-content;
+}
+
+/* ✅ Variant Styles */
+.info {
+    background: #d9f1ff;
+    color: #007bff;
+    border-left: 5px solid #007bff;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+    border-left: 5px solid #28a745;
+}
+
+.danger {
+    background: #f8d7da;
+    color: #721c24;
+    border-left: 5px solid #dc3545;
+}
+
+/* ✅ Modern Icon Styling */
+.success-icon {
+    color: #28a745;
+    font-size: 20px;
+}
+
+.danger-icon {
+    color: #dc3545;
+    font-size: 20px;
+}
+
+.info-icon {
+    color: #007bff;
+    font-size: 20px;
+}
+
+/* ✅ Hover Effect */
+.error-msg:hover {
+    transform: translateY(-3px);
+}
+
+/* ✅ Fade In & Out Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}

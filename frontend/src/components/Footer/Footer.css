@@ -1,0 +1,87 @@
+/* Footer container styles */
+.footer {
+    background-color: #203a43; /* Set background color */
+    color: #ffffff; /* Set text color */
+    text-align: center; /* Center align text */
+    padding: 15px 0; /* Adjusted padding for better spacing */
+    font-size: 1rem; /* Set font size */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* General footer text styles */
+  .footer-text, .footer-statement, .footer-description {
+    margin: 0; /* Remove default margins */
+    padding: 5px 0; /* Add controlled padding for spacing */
+  }
+  
+  /* Copyright and Credit Section */
+  .footer-text {
+    font-size: 1rem;
+  }
+  
+  .footer p.italic-text {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+  
+  .footer p strong {
+    font-weight: bold;
+  }
+  
+  .footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Made with ❤️ Section */
+  .footer .footer-statement {
+    font-size: 1.1rem;
+  }
+  
+  .footer .footer-statement a {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .footer .footer-statement a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Description */
+  .footer .footer-description {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #f1f1f1;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 15px 0;
+    }
+  
+    .footer p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 10px 0;
+    }
+  
+    .footer p {
+      font-size: 0.8rem;
+    }
+  }
+  

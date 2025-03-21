@@ -1,0 +1,119 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../background1.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #222; /* Slightly softer black for a modern look */
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.5px; /* Subtle letter spacing for a sleek feel */
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #444; /* Softer black for a refined look */
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.2px; /* A little spacing for better readability */
+}
+
+  
+  .intro-text {
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .landingbutton {
+    width: 220px;
+    height: 55px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .landingbutton:hover {
+    transform: translateY(-5px);
+  }
+  
+  .landingbutton:active {
+    transform: translateY(0);
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .title {
+      font-size: 3rem;
+    }
+  
+    .subtitle {
+      font-size: 1.3rem;
+    }
+  
+    .landingbutton {
+      width: 180px;
+      height: 50px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .main {
+      background-position: top;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .buttonContainer {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .landingbutton {
+      width: 100%;
+      height: 50px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .landingbutton {
+      width: 100%;
+      height: 45px;
+      font-size: 0.95rem;
+    }
+  }
+  

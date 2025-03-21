@@ -1,0 +1,107 @@
+/* Profile Page Styling */
+.profilesContainer {
+    display: flex;
+    margin: 20px;
+  }
+  
+  .profile-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Modern Input Fields */
+  .modern-input {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .modern-input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Modern File Input */
+  .file-input-group {
+    margin-top: 15px;
+  }
+  
+  .custom-file-upload {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #5d5959;
+  }
+  
+  .custom-file-upload input {
+    display: none;
+  }
+  
+  /* Modern Button */
+  .modern-button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #000;
+    color: white;
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .modern-button:hover {
+    background-color: #524b4b;
+  }
+  
+  /* Profile Image */
+  .profile-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profilePic {
+    width: 70%;
+    height: 70%;
+    border-radius: 64%;
+    border: 4px solid #000;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Styling */
+  @media only screen and (max-width: 768px) {
+    .profileContainer {
+      flex-direction: column-reverse;
+    }
+  }
+  .edit-profile-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    /* border-bottom: 4px solid black; */
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .edit-profile-title:hover {
+    color: grey;
+    
+  }

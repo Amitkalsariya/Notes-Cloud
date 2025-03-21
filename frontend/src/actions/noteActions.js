@@ -1,6 +1,6 @@
 import axios from "axios";
 import { NOTES_CREATE_FAIL, NOTES_CREATE_REQUEST, NOTES_CREATE_SUCCESS, NOTES_DELETE_FAIL, NOTES_DELETE_REQUEST, NOTES_DELETE_SUCCESS, NOTES_LIST_FAIL, NOTES_LIST_REQUEST, NOTES_LIST_SUCCESS, NOTES_UPDATE_FAIL, NOTES_UPDATE_REQUEST, NOTES_UPDATE_SUCCESS } from "../constants/noteContstant";
-const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+
 export const listNotes = () => async (dispatch, getState) => {
     try {
       dispatch({
@@ -17,7 +17,7 @@ export const listNotes = () => async (dispatch, getState) => {
         },
       };
   
-      const { data } = await axios.get(`${API_BASE_URL}/api/notes`, config);
+      const { data } = await axios.get("https://cloud-memo-backend.onrender.com/api/notes", config);
   
       dispatch({
         type: NOTES_LIST_SUCCESS,
@@ -56,7 +56,7 @@ export const listNotes = () => async (dispatch, getState) => {
       };
   
       const { data } = await axios.post(
-        `${API_BASE_URL}/api/notes/create`,
+        "https://cloud-memo-backend.onrender.com/api/notes/create",
         { title, content, category },
         config
       );
@@ -98,7 +98,7 @@ export const listNotes = () => async (dispatch, getState) => {
       };
   
       const { data } = await axios.put(
-        `${API_BASE_URL}/api/notes/${id}`,
+        `https://cloud-memo-backend.onrender.com/api/notes/${id}`,
         { title, content, category },
         config
       );
@@ -135,7 +135,7 @@ export const listNotes = () => async (dispatch, getState) => {
         },
       };
   
-      const { data } = await axios.delete(`${API_BASE_URL}/api/notes/${id}`, config);
+      const { data } = await axios.delete(`https://cloud-memo-backend.onrender.com/api/notes/${id}`, config);
   
       dispatch({
         type: NOTES_DELETE_SUCCESS,

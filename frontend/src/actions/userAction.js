@@ -1,8 +1,6 @@
 import { NOTE_LIST_RESET } from "../constants/noteContstant";
 import { LOGIN_FAIL, LOGIN_REQUEST, LOGIN_SUCCESS, LOGOUT, REGISTER_FAIL, REGISTER_REQUEST, REGISTER_SUCCESS, USER_UPDATE_FAIL, USER_UPDATE_REQUEST, USER_UPDATE_SUCCESS } from "../constants/userContstant";
 import axios from "axios";
-const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
-
 export const login = (email, password) => async (dispatch) => {
     try {
       dispatch({ type: LOGIN_REQUEST });
@@ -14,7 +12,7 @@ export const login = (email, password) => async (dispatch) => {
       };
   
       const { data } = await axios.post(
-      `${API_BASE_URL}/api/users/login`,
+        "https://cloud-memo-backend.onrender.com/api/users/login",
         { email, password },
         config
       );
@@ -55,7 +53,7 @@ export const login = (email, password) => async (dispatch) => {
       };
   
       const { data } = await axios.post(
-        `${API_BASE_URL}/api/users`,
+        "https://cloud-memo-backend.onrender.com/api/users",
         { name, pic, email, password },
         config
       );
@@ -91,7 +89,7 @@ export const login = (email, password) => async (dispatch) => {
         },
       };
   
-      const { data } = await axios.post(`${API_BASE_URL}/api/users/profile`, user, config);
+      const { data } = await axios.post("https://cloud-memo-backend.onrender.com/api/users/profile", user, config);
   
       dispatch({ type: USER_UPDATE_SUCCESS, payload: data });
   

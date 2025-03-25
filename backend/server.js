@@ -17,6 +17,9 @@ app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 // Root route for testing
+app.get("/ping", (req, res) => {
+  res.status(200).send("📶 Ping successfully received!");
+});
 app.get('/', (req, res) => {
     res.send("API is Running");
 });
